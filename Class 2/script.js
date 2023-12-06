@@ -134,28 +134,28 @@ if(score > 100) {
     console.log("Congrats!")
 
     if(score >= 120) {
-        console.log("Best result ever, you win a bonus prize!")
+        console.log("Best result ever, you win a bonus prize!");
     }
     else {
-        console.log("You won, but not enough for a bonus prize!")
+        console.log("You won, but not enough for a bonus prize!");
     }
 }
 else if(score === 100) {
-    console.log("Congrats, you won, but just barely!")
+    console.log("Congrats, you won, but just barely!");
 }
 else {
-  console.log("Sorry, try again!")  
-};
+  console.log("Sorry, try again!");
+}
 
 // The rest of the code continues
 console.log("bla bla");
 
 let trainer = "Pane";
 if(trainer) {
-    console.log(`Your trainer's name is ${trainer}.`)
+    console.log(`Your trainer's name is ${trainer}.`);
 }
 else {
-    console.log(`Your group currently does not have a trainer.`)
+    console.log(`Your group currently does not have a trainer.`);
 }
 
 // Input prompt

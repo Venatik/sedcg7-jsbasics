@@ -1,0 +1,10 @@
+body {
+    background-color: black;
+    color: whitesmoke;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+}
+
+.main {
+    margin-top: 200px;
+}

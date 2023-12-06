@@ -39,5 +39,5 @@ else if(zodiac == 11) {
     console.log("Your chinese zodiac sign is: PIG!");
 }
 else {
-    console.log("Sorry, you seem to have gotten an invalid result. Please try again.");
+    console.log("Sorry, you seem to have gotten an invalid result. Please input a valid birth year.");
 }

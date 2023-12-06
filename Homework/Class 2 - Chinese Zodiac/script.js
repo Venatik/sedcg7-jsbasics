@@ -1,7 +1,11 @@
+// User inputs their birth year
 let inputDate = prompt("Please input your birth year:");
+
+// Convert the input value to an integer
 let birthYear = parseInt(inputDate);
 let zodiac = (birthYear - 4) % 12;
 
+// Output the result to console
 if(zodiac == 0) {
     console.log("Your chinese zodiac sign is: RAT!");
 }

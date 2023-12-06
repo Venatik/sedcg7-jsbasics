@@ -1,7 +1,7 @@
 let btn = document.getElementById("submit");
 
 // Add an event listener to the button
-btn.addEventListener("click", function() {    
+btn.addEventListener("click", function() {
 // Get the input value from the input field
 let inputYear = document.getElementById("year").value;
 

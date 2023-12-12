@@ -58,11 +58,18 @@ console.log(myFirstArray);
 console.log("-----------Loops-----------");
 
 // While loop
-
 let counter = 1;
-while (counter <= 10) {
+while(counter <= 10) {
     console.log(counter);
     counter++; // If we don't add this, the loop will run forever
 }
 
-// For loop
+// Exercise 1: Write a javascript program to write the sum of squares of the numbers from 101 to 150
+let sum = 0;
+let whileCounter = 101;
+while(whileCounter <= 150) {
+    console.log(`whileCounter: ${whileCounter}`);
+    sum += Math.pow(whileCounter, 2);
+    whileCounter++;
+}
+console.log(`The sum of squares of the numbers from 101 to 150 is: ${sum}`);

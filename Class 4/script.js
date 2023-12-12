@@ -68,8 +68,41 @@ while(counter <= 10) {
 let sum = 0;
 let whileCounter = 101;
 while(whileCounter <= 150) {
+    // whileCounter++; if we put the counter first, we will skip the first number (101)
     console.log(`whileCounter: ${whileCounter}`);
     sum += Math.pow(whileCounter, 2);
+    console.log(`Math.pow(): ${Math.pow(whileCounter, 2)}`);
+    console.log(`Sum of Squares: ${sum}`);
     whileCounter++;
 }
 console.log(`The sum of squares of the numbers from 101 to 150 is: ${sum}`);
+
+// Do while loop
+
+// Ask the user to guess our secret number via prompt (ranging from 0-9)
+// If the user guesses the number, we print "You guessed the number"
+// If the user doesn't guess the number, we ask them to guess again until they guess the number
+
+const secretNumber = 5;
+let userNumber = 0;
+// do {
+//     userNumber = parseInt(prompt("Guess the secret number from 0-9:"));
+//     if(userNumber == secretNumber) {
+//         console.log("You guessed the number");
+//     } else {
+//         userNumber = prompt("Guess again");
+//     }
+// } while (userNumber !== secretNumber);
+
+// Way 2:
+// do {
+//     userNumber = parseInt(prompt("Guess the secret number from 0-9:"));
+// } while (userNumber !== secretNumber);
+
+while(true) { // Using while(true) is the same as using do while
+    userNumber = parseInt(prompt("Guess the secret number from 0-9:"));
+    if (userNumber === secretNumber) {
+        console.log("You guessed the number");
+        break;
+    }
+}

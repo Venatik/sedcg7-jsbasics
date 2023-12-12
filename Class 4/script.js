@@ -53,3 +53,16 @@ console.log(myFirstArray);
 // .shift() method - removes the first element from the array
 myFirstArray.shift();
 console.log(myFirstArray);
+
+// Loop
+console.log("-----------Loops-----------");
+
+// While loop
+
+let counter = 1;
+while (counter <= 10) {
+    console.log(counter);
+    counter++; // If we don't add this, the loop will run forever
+}
+
+// For loop

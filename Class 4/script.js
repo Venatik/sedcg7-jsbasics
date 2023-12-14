@@ -99,10 +99,54 @@ let userNumber = 0;
 //     userNumber = parseInt(prompt("Guess the secret number from 0-9:"));
 // } while (userNumber !== secretNumber);
 
-while(true) { // Using while(true) is the same as using do while
-    userNumber = parseInt(prompt("Guess the secret number from 0-9:"));
-    if (userNumber === secretNumber) {
-        console.log("You guessed the number");
+// while(true) { // Using while(true) is the same as using do while
+//     userNumber = parseInt(prompt("Guess the secret number from 0-9:"));
+//     if (userNumber === secretNumber) {
+//         console.log("You guessed the number");
+//         break;
+//     }
+// }
+
+// For loop
+console.log("-----------For loop-----------");
+
+for(let i = 2; i <= 100; i += 2) {
+    console.log(i);
+}
+
+let workingDays = ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"];
+for(let i = 0; i < workingDays.length; i++) {
+    console.log(`Day: ${workingDays[i]}`);
+}
+
+// Print until Wednesday, without Wednesday
+for(let i = 0; i < workingDays.length; i++) {
+    if(workingDays[i] === "Wednesday") {
         break;
     }
+    console.log(`Day: ${workingDays[i]}`);
 }
+
+// Print all days, except Tuesday and Thursday
+for(let i = 0; i < workingDays.length; i++) {
+    if(workingDays[i] === "Tuesday" || workingDays[i] === "Thursday") {
+        continue;
+    }
+    console.log(`Day: ${workingDays[i]}`);
+}
+
+// For-of loop
+console.log("-----------For-of loop-----------");
+
+let forOfLoop = [1, 2, 3, 4, 5];
+for(let number of forOfLoop) {
+    console.log(number);
+}
+
+for(let day of workingDays) {
+    if(day === "Tuesday" || day === "Thursday") {
+        continue;
+    }
+    console.log(`Day: ${day}`);
+}
+

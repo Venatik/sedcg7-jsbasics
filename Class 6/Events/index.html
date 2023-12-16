@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Class 6 - Events</title>
+    <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+    <p>----------Repeating the DOM-----------------</p>
+    <br>
+    <button id="btnShow">Show text</button>
+    <button id="btnHide">Hide text</button>
+    <h1 id="myHeader">Repeat DOM Example</h1>
+    <br>
+    <p class="paragraph">Some text</p>
+    <p class="paragraph">Some text</p>
+    <br>
+    <input type="text" placeholder="type selector">
+    <br>
+
+    <!-- EVENTS -->
+    <p>------------------EVENTS----------------------</p>
+    <br>
+    <!-- HTML Event Handler -->
+    <button onclick="alert('Button Clicked!')">Click Me - HTML Event Handler</button>
+    <br>
+    <button id="btnHTML2" onclick="alertMessage()">Click Me - HTML Event Handler 2</button>
+    <br>
+    <!-- When you click this button change the text -->
+    <button id="btnHTML3" onclick="changeText()">Click Me - HTML Event Handler 3</button>
+    <p id="message">This text will change on button click.</p>
+
+    <!-- Traditional DOM Event Handler -->
+    <button id="btnDOM1">Click Me - Traditional DOM Event Handler 1</button>
+    <br>
+    <br>
+    <br>
+    <!-- DOM Level 2 event listeners -->
+    <button id="btnDOM2">Click Me - DOM Level 2 Event Handler</button>
+    <br>
+    <br>
+
+    <button id="btn6">Greetings</button>
+    <br>
+    <br>
+    <!-- Using target -->
+    <div id="redDiv"></div>
+    <div id="secondDiv"></div>
+    <p id="someParagraph">Some text</p>
+
+    <!-- Getting values from inputs -->
+    <br>
+    <br>
+    <input type="text" id="nameField" placeholder="Enter a name" /><br>
+    <button id="btnField">Click me</button>
+
+    <form id="userForm">
+        <input type="text" id="firstName" placeholder="Your First Name"/><br>
+        <input type="text" id="lastName" placeholder="Your Last Name"/><br>
+        <input type="email" id="email" placeholder="Your Email"/><br>
+        <input type="password" id="password" placeholder="Your Password"/><br>
+    </form>
+         <button id="btnSubmit">Submit</button>
+
+    <p id="output"></p>
+
+
+    <script src="script.js"></script>
+</body>
+</html>

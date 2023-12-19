@@ -1,3 +1,5 @@
+// FIX THIS CODE
+
 // let students = [];
 
 // function Student(firstName, lastName, age) {
@@ -34,7 +36,7 @@
 
 // Alternative solution:
 
-const students = [];
+let students = [];
 function saveStudent() {
     let firstName = document.getElementById("firstName").value;
     let lastName = document.getElementById("lastName").value;
@@ -55,9 +57,9 @@ function saveStudent() {
     studentList.appendChild(listItem);
     console.log(listItem);
 
-    firstName.value = "";
-    lastName.value = "";
-    age.value = "";
+    document.getElementById("firstName").value = "";
+    document.getElementById("lastName").value = "";
+    document.getElementById("age").value = "";
 }
 
 let addButton = document.getElementById("addButton");

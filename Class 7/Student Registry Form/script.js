@@ -39,6 +39,7 @@ button.addEventListener("click", function(event) {
 // Alternative solution:
 
 // let students = [];
+
 // function saveStudent() {
 //     let firstName = document.getElementById("firstName").value;
 //     let lastName = document.getElementById("lastName").value;
